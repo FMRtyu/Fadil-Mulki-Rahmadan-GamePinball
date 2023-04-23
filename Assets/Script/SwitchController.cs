@@ -18,6 +18,9 @@ public class SwitchController : MonoBehaviour
     private SwitchState state;
     private Renderer renderer;
 
+    public AudioManager audioManager;
+    public VFXManager vfxManager;
+
     private void Start()
     {
         renderer = GetComponent<Renderer>();
@@ -32,6 +35,12 @@ public class SwitchController : MonoBehaviour
         if (other == bola)
         {
             Toggle();
+
+            //play sfx
+            audioManager.PlaySFXSwitch(other.transform.position);
+
+            //playvfx
+            vfxManager.PlayVFXSwitch(other.transform.position);
         }
     }
     private void Set(bool active)

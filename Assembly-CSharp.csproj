@@ -57,10 +57,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\BallController.cs" />
+    <Compile Include="Assets\Script\VFXManager.cs" />
     <Compile Include="Assets\Script\BumperController.cs" />
     <Compile Include="Assets\Script\LauncherController.cs" />
+    <Compile Include="Assets\Script\AudioManager.cs" />
     <Compile Include="Assets\Script\SwitchController.cs" />
     <Compile Include="Assets\Script\PaddleController.cs" />
+    <Compile Include="Assets\Script\FXController.cs" />
+    <Compile Include="Assets\Script\CameraController.cs" />
+    <Compile Include="Assets\Script\TriggerZoomInController.cs" />
+    <Compile Include="Assets\Script\TriggerZoomOutController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
