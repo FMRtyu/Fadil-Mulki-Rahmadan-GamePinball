@@ -14,12 +14,14 @@ public class SwitchController : MonoBehaviour
     public Collider bola;
     public Material offMaterial;
     public Material onMaterial;
+    public float score;
 
     private SwitchState state;
     private Renderer renderer;
 
     public AudioManager audioManager;
     public VFXManager vfxManager;
+    public ScoreManager scoreManager;
 
     private void Start()
     {
@@ -41,6 +43,9 @@ public class SwitchController : MonoBehaviour
 
             //playvfx
             vfxManager.PlayVFXSwitch(other.transform.position);
+
+            //add score
+            scoreManager.AddScore(score);
         }
     }
     private void Set(bool active)
